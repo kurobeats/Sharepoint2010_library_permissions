@@ -1,5 +1,5 @@
 Add-PSSnapin Microsoft.SharePoint.Powershell -EA 0 
-$web = get-spweb http://vm-wlimpocdoc/sites/cdg/cdmrt
+$web = get-spweb http://sbx01/sites/example
 foreach ($list in $web.Lists) 
 { 
      if($list.browserfilehandling -eq "Strict") 
